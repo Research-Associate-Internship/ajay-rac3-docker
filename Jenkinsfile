@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Cloning Git') {
             steps {
-                git 'https://github.com/Research-Associate-Internship/ajay-rac3-docker.git'      
+                git branch: 'main', credentialsId: 'githu-cred', url: 'https://github.com/Research-Associate-Internship/ajay-rac3-docker.git'      
             }
         }
     
