@@ -1,5 +1,7 @@
 pipeline {
-    agent any 
+    agent {
+        label 'ajay-node'
+    }
     environment {
         //once you sign up for Docker hub, use that user_id here
         registry = "ajaykumarpunati/pythonapp"
